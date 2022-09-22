@@ -1,7 +1,7 @@
 package com.CabInvoiceGenerator.BridgeLabz;
 
 public class CabInvoiceGenerator {   /*
- * UC 1 -
+ * UC 2 -
  */
     private static final int MIN_COST_PER_KM = 10;
     private static final int COST_PER_TIME = 1;
@@ -14,4 +14,13 @@ public class CabInvoiceGenerator {   /*
         }
         return totalFare;
     }
+
+    public double multipleRide(Ride[] rides) {
+        double totalFare = 0;
+        for (Ride ride : rides) {
+            totalFare += Fare(ride.distance, ride.time);
+        }
+        return totalFare;
+    }
+    
 }
