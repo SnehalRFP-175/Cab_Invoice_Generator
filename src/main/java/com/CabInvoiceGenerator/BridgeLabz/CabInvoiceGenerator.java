@@ -22,4 +22,5 @@ public class CabInvoiceGenerator {   /*
         }
         return totalFare;
     }
+    
 }
